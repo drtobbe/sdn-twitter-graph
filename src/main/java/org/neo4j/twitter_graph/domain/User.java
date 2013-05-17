@@ -1,9 +1,8 @@
 package org.neo4j.twitter_graph.domain;
 
-import org.springframework.data.neo4j.annotation.*;
-
-import java.util.HashSet;
-import java.util.Set;
+import org.springframework.data.neo4j.annotation.GraphId;
+import org.springframework.data.neo4j.annotation.Indexed;
+import org.springframework.data.neo4j.annotation.NodeEntity;
 
 /**
  * @author mh
@@ -13,7 +12,7 @@ import java.util.Set;
 public class User {
     @GraphId Long id;
 
-    @Indexed(unique=true) String user;
+    @Indexed(unique = true) String user;
 
     public User() {
     }
@@ -32,6 +31,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "@"+ user;
+        return "@" + user;
     }
 }

@@ -1,9 +1,9 @@
 package org.neo4j.twitter_graph.repositories;
 
+import java.util.Collection;
+
 import org.neo4j.twitter_graph.domain.Tweet;
 import org.springframework.data.neo4j.repository.GraphRepository;
-
-import java.util.Collection;
 
 /**
  * @author mh

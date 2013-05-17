@@ -12,6 +12,8 @@ import org.springframework.data.neo4j.annotation.StartNode;
 @RelationshipEntity
 public class Follows {
     @GraphId Long id;
+
     @StartNode User follower;
+
     @EndNode User user;
 }

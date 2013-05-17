@@ -1,10 +1,14 @@
 package org.neo4j.twitter_graph.domain;
 
-import org.springframework.data.neo4j.annotation.*;
-
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.springframework.data.neo4j.annotation.Fetch;
+import org.springframework.data.neo4j.annotation.GraphId;
+import org.springframework.data.neo4j.annotation.Indexed;
+import org.springframework.data.neo4j.annotation.NodeEntity;
+import org.springframework.data.neo4j.annotation.RelatedTo;
 
 /**
  * @author mh
@@ -14,14 +18,14 @@ import java.util.Set;
 public class Tweet {
     @GraphId Long id;
 
-    @Indexed(unique=true) Long tweetId;
+    @Indexed(unique = true) Long tweetId;
 
     String text;
 
     @Fetch User sender;
-    @Fetch @RelatedTo(type="TAG") Collection<Tag> tags=new HashSet<Tag>();
-    @Fetch @RelatedTo(type="MENTION") private Set<User> mentions=new HashSet<User>();
-    @Fetch @RelatedTo(type="SOURCE") private Tweet source;
+    @Fetch @RelatedTo(type = "TAG") Collection<Tag> tags = new HashSet<Tag>();
+    @Fetch @RelatedTo(type = "MENTION") private Set<User> mentions = new HashSet<User>();
+    @Fetch @RelatedTo(type = "SOURCE") private Tweet source;
 
     public Tweet() {
     }
@@ -49,9 +53,7 @@ public class Tweet {
 
     @Override
     public String toString() {
-        return "Tweet " + tweetId +
-                ": " + text  +
-                " by " + sender;
+        return "Tweet " + tweetId + ": " + text + " by " + sender;
     }
 
     public Set<User> getMentions() {

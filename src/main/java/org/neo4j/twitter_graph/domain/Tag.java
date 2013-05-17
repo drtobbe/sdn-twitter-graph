@@ -1,10 +1,8 @@
 package org.neo4j.twitter_graph.domain;
 
-import org.neo4j.graphdb.Direction;
-import org.springframework.data.neo4j.annotation.*;
-
-import java.util.HashSet;
-import java.util.Set;
+import org.springframework.data.neo4j.annotation.GraphId;
+import org.springframework.data.neo4j.annotation.Indexed;
+import org.springframework.data.neo4j.annotation.NodeEntity;
 
 /**
  * @author mh
@@ -13,7 +11,8 @@ import java.util.Set;
 @NodeEntity
 public class Tag {
     @GraphId Long id;
-    @Indexed(unique=true) String tag;
+
+    @Indexed(unique = true) String tag;
 
     public Tag() {
     }
@@ -28,6 +27,6 @@ public class Tag {
 
     @Override
     public String toString() {
-        return "#"+ tag;
+        return "#" + tag;
     }
 }

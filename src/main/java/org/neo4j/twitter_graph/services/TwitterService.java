@@ -1,22 +1,30 @@
 package org.neo4j.twitter_graph.services;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.neo4j.twitter_graph.domain.Follows;
-import org.neo4j.twitter_graph.domain.Tweet;
 import org.neo4j.twitter_graph.domain.Tag;
+import org.neo4j.twitter_graph.domain.Tweet;
 import org.neo4j.twitter_graph.domain.User;
 import org.neo4j.twitter_graph.repositories.TagRepository;
 import org.neo4j.twitter_graph.repositories.TweetRepository;
 import org.neo4j.twitter_graph.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.social.twitter.api.*;
+import org.springframework.social.twitter.api.FriendOperations;
+import org.springframework.social.twitter.api.SearchOperations;
+import org.springframework.social.twitter.api.SearchResults;
+import org.springframework.social.twitter.api.TwitterProfile;
 import org.springframework.social.twitter.api.impl.TwitterTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @author mh
@@ -26,25 +34,23 @@ import java.util.regex.Pattern;
 public class TwitterService {
     private static final Pattern MENTION = Pattern.compile("@(\\p{Alnum}{3,})");
     private static final Pattern TAG = Pattern.compile("#(\\p{Alnum}{3,})");
-    @Autowired
-    UserRepository userRepository;
-    @Autowired
-    TagRepository tagRepository;
-    @Autowired
-    TweetRepository tweetRepository;
+    @Autowired UserRepository userRepository;
+    @Autowired TagRepository tagRepository;
+    @Autowired TweetRepository tweetRepository;
 
     @Transactional
     public List<Tweet> importTweets(String search) {
-        return importTweets(search,null);
+        return importTweets(search, null);
     }
 
     @Transactional
     public List<Tweet> importTweets(String search, Long lastTweetId) {
-        System.out.println("Importing for " +search+ ", max tweet id: "+lastTweetId);
+        System.out.println("Importing for " + search + ", max tweet id: " + lastTweetId);
 
         final SearchOperations searchOperations = new TwitterTemplate().searchOperations();
-        
-        final SearchResults results = lastTweetId==null ? searchOperations.search(search,1,200) : searchOperations.search(search,1,200,lastTweetId,Long.MAX_VALUE);
+
+        final SearchResults results = lastTweetId == null ? searchOperations.search(search, 1, 200) : searchOperations
+                .search(search, 1, 200, lastTweetId, Long.MAX_VALUE);
 
         final List<Tweet> result = new ArrayList<Tweet>();
         for (org.springframework.social.twitter.api.Tweet tweet : results.getTweets()) {
@@ -69,22 +75,24 @@ public class TwitterService {
     @Transactional
     public void connectFollowers() throws InterruptedException {
         final FriendOperations friendOperations = new TwitterTemplate().friendOperations();
-        Map<String,User> users=new HashMap<String, User>(); 
+        Map<String, User> users = new HashMap<String, User>();
         for (User user : userRepository.findAll()) {
-            users.put(user.getUser(),user);    
+            users.put(user.getUser(), user);
         }
         for (Map.Entry<String, User> entry : users.entrySet()) {
             addFriends(friendOperations, users, entry);
         }
     }
 
-    private void addFriends(FriendOperations friendOperations, Map<String, User> users, Map.Entry<String, User> entry) throws InterruptedException {
+    private void addFriends(FriendOperations friendOperations, Map<String, User> users, Map.Entry<String, User> entry)
+            throws InterruptedException {
         try {
             final String name = entry.getKey();
             final User user = entry.getValue();
             for (TwitterProfile profile : friendOperations.getFriends(name)) {
                 final User friend = users.get(profile.getScreenName());
-                if (friend == null) continue;
+                if (friend == null)
+                    continue;
                 System.out.println(name + " FOLLOWS " + friend.getUser());
                 userRepository.createRelationshipBetween(user, friend, Follows.class, "FOLLOWS");
             }
@@ -108,9 +116,11 @@ public class TwitterService {
     }
 
     private void addOriginalTweet(Tweet tweet, final Long replyId) {
-        if (replyId == null) return;
+        if (replyId == null)
+            return;
         final Tweet source = tweetRepository.findByTweetId(replyId);
-        if (source == null) return;
+        if (source == null)
+            return;
         tweet.setSource(source);
     }
 
@@ -120,7 +130,7 @@ public class TwitterService {
 
     public Set<String> extractTokens(String text, Pattern p) {
         final Matcher matcher = p.matcher(text);
-        Set<String> result=new LinkedHashSet<String>();
+        Set<String> result = new LinkedHashSet<String>();
         while (matcher.find()) {
             result.add(matcher.group(1).toLowerCase());
         }

@@ -1,22 +1,7 @@
 #
-git log
-git status
-git commit -a -m "add eclipse files"
+# A sample twitter-graph application written with Spring Data Neo4j
+#
+mvn clean install
+mvn exec:exec
+open http://localhost:7473/
 
-git status
-git remote -v
-git push -u origin master
-
-
-
-#branch
-git branch
-git checkout my-feature-branch
-git branch
-git commit -a -m "modify file adding hi"
-git checkout master
-git commit -a -m "add line on hallo.txt"
-git merge my-feature-branch
-git commit -a -m "resolve merge conflicts"
-git checkout my-feature-branch
-git checkout master

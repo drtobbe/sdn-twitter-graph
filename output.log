@@ -1,0 +1,315 @@
+15:55:48,909 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+15:55:48,910 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:55:48,910 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/drtobbe/.m2_3.0.3/repository/org/neo4j/app/neo4j-server/1.8.1/neo4j-server-1.8.1.jar!/logback.xml]
+15:55:48,928 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@62c09554 - URL [jar:file:/Users/drtobbe/.m2_3.0.3/repository/org/neo4j/app/neo4j-server/1.8.1/neo4j-server-1.8.1.jar!/logback.xml] is not of type file
+15:55:48,972 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+15:55:48,977 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:55:48,980 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+15:55:48,992 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:55:49,033 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+15:55:49,033 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+15:55:49,035 |-ERROR in ch.qos.logback.core.joran.action.IncludeAction - Could not find resource corresponding to [custom-logback.xml]
+15:55:49,037 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@518bf072 - Registering current configuration as safe fallback point
+
+15:55:49.089 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4476128: startup date [Tue May 21 15:55:49 CEST 2013]; root of context hierarchy
+15:55:49.145 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [TwitterGraph-server.xml]
+15:55:49.540 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'neo4jTemplate': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.541 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'neo4jMappingContext': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jMappingContext; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jMappingContext; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.542 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'mappingInfrastructure': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=mappingInfrastructure; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=mappingInfrastructure; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.543 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'relationshipTypeRepresentationStrategy': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipTypeRepresentationStrategy; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipTypeRepresentationStrategy; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.544 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'nodeTypeRepresentationStrategy': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeTypeRepresentationStrategy; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeTypeRepresentationStrategy; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.545 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'typeRepresentationStrategyFactory': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=typeRepresentationStrategyFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=typeRepresentationStrategyFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.545 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'entityStateHandler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityStateHandler; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityStateHandler; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.546 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'nodeTypeMapper': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeTypeMapper; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeTypeMapper; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.547 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'relationshipTypeMapper': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipTypeMapper; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipTypeMapper; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.548 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'entityFetchHandler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityFetchHandler; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityFetchHandler; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.549 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'nodeStateTransmitter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeStateTransmitter; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeStateTransmitter; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.550 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'neo4jConversionService': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jConversionService; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jConversionService; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.550 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'graphRelationshipInstantiator': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphRelationshipInstantiator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphRelationshipInstantiator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.551 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'graphEntityInstantiator': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphEntityInstantiator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphEntityInstantiator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.552 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'entityAlias': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityAlias; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=entityAlias; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.553 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'relationshipEntityStateFactory': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipEntityStateFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipEntityStateFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.554 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'nodeEntityStateFactory': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeEntityStateFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeEntityStateFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.555 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'nodeDelegatingFieldAccessorFactory': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeDelegatingFieldAccessorFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=nodeDelegatingFieldAccessorFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.556 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'relationshipDelegatingFieldAccessorFactory': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipDelegatingFieldAccessorFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=relationshipDelegatingFieldAccessorFactory; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.557 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'neo4jTransactionManager': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=neo4jTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.557 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'indexCreationMappingEventListener': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=indexCreationMappingEventListener; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=indexCreationMappingEventListener; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.558 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'graphDatabase': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphDatabase; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=graphDatabase; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.559 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'configurationCheck': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=configurationCheck; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=configurationCheck; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.560 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'persistenceExceptionTranslator': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=persistenceExceptionTranslator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=persistenceExceptionTranslator; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.561 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'indexProvider': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=indexProvider; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.neo4j.config.Neo4jConfiguration#0; factoryMethodName=indexProvider; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.data.neo4j.config.Neo4jConfiguration]
+15:55:49.768 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:55:49.770 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:55:49.787 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fc54796: defining beans [twitterService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,userRepository,tagRepository,tweetRepository,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,graphDatabaseService,org.springframework.context.annotation.ConfigurationClassPostProcessor#0,org.springframework.data.neo4j.config.Neo4jConfiguration#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,neo4jTemplate,neo4jMappingContext,mappingInfrastructure,relationshipTypeRepresentationStrategy,nodeTypeRepresentationStrategy,typeRepresentationStrategyFactory,entityStateHandler,nodeTypeMapper,relationshipTypeMapper,entityFetchHandler,nodeStateTransmitter,neo4jConversionService,graphRelationshipInstantiator,graphEntityInstantiator,entityAlias,relationshipEntityStateFactory,nodeEntityStateFactory,nodeDelegatingFieldAccessorFactory,relationshipDelegatingFieldAccessorFactory,neo4jTransactionManager,indexCreationMappingEventListener,graphDatabase,configurationCheck,persistenceExceptionTranslator,indexProvider,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#1]; root of factory hierarchy
+15:55:50.647 [main] INFO  o.s.t.jta.JtaTransactionManager - Using JTA UserTransaction: org.neo4j.kernel.impl.transaction.UserTransactionImpl@2f6a23cf
+15:55:50.647 [main] INFO  o.s.t.jta.JtaTransactionManager - Using JTA TransactionManager: org.neo4j.kernel.impl.transaction.SpringTransactionManager@6155035a
+Importing for #svpol, max tweet id: null
+Imported Tweet 336842696092155904: RT @rogsahl: Jag väntar fortfarande på alla klipp där poliser påstås skrika nazistramsor. #husby #svpol by @jupptuck
+Imported Tweet 336842651141804032: RT @StefanBergmark: "Ett liv i Husby är inte lika mycket värt som ett liv på Djursholm", skriver @Foujan http://t.co/ing2LOfnx9 #svpol #husby by @Sarahlouiseand
+Imported Tweet 336842582900494336: Varför tiger Dispatch Int:l om #Husby? #svpol by @TommyFunebo
+Imported Tweet 336842540789678080: Står det i lagen "polisman kan bortse från trafiklagen för hen har brottom till lunchen" - nån som kan gissa? #svpol #husby #debatt by @witnezOfmankind
+Imported Tweet 336842520149508096: RT @ExponeratInfo: Vad är en politiker, en journalist och en väljare? http://t.co/XMqoDSj44p #svpol by @frkgidlund
+Imported Tweet 336842469490708480: Rädda Barnen finansierar invandrarkravallerna http://t.co/QpZi8gDZgY #svpol by @Mittswe
+Imported Tweet 336842444618465280: RT @rogsahl: Jag väntar fortfarande på alla klipp där poliser påstås skrika nazistramsor. #husby #svpol by @TomasErik75
+Imported Tweet 336842439379795968: SOM-institutet: Dramatiskt ras för dagspressen http://t.co/tDicY88PRn #svpol by @Mittswe
+Imported Tweet 336842418043363328: RT @kentekeroth: --&gt; Med den logiken; borde det inte vara bättre att skicka hem dem? Då gör de ju sina länder "rikare och starkare". #svpol by @FelixJonsson
+Imported Tweet 336842323273068545: RT @goteborgsfria: Khadidje, 73 år och dement, riskerar utvisning http://t.co/Gsn9PhFDDo  #reva #asyl #asylpol #svpol by @IngenillegalGBG
+Imported Tweet 336842320815194112: Här har ni något att fundera kring #husby #svpol http://t.co/sJ9CWo4phT by @rogsahl
+Imported Tweet 336842092280172544: Många svenskar har fastnat i utanförskap &amp; bidragsberoende. Medan Alliansens utgifter har bara ökat sen 06 http://t.co/VE78R6RblU #svpol by @sharifhan
+Imported Tweet 336842025968205826: RT @goteborgsfria: Dement 73-åring flydde från Syrien – riskerar nu utvisning http://t.co/Gsn9PhFDDo   #reva #asyl #asylpol #svpol #Syrien by @IngenillegalGBG
+Imported Tweet 336842009958547460: @rogsahl om AB o andra börj rapportera sanningen så skulle inte sanningssajterna (förvisso med ibland usla kommentarer) inte behövas #svpol by @PolitikTuben
+Imported Tweet 336842002979237890: Tittar på presskonferensen och journalist kallar Reinfeldt 'försiktig' jag vill kalla honom feg, men det är min åsikt ;) #Husby #Svpol by @kottecentralen
+Imported Tweet 336842000269705216: RT @goteborgsfria: Khadidje, 73 år och dement, riskerar utvisning http://t.co/Gsn9PhFDDo #reva #asyl #asylpol #svpol by @IngenillegalGBG
+Imported Tweet 336841988940890112: Vad är en politiker, en journalist och en väljare? http://t.co/XMqoDSj44p #svpol by @ExponeratInfo
+Imported Tweet 336841969940713474: Hur många tror polisen är lagen? Hur många tror polisen är domaren? #svpol #husby #debatt by @witnezOfmankind
+Imported Tweet 336841931537649665: RT @jonten359: Gården är stängd för länge sen, snuten jagar ungdomsgäng, natten är hård för betongens kungar. #Husby #nationalteatern #svpol by @AntonHugoOliver
+Imported Tweet 336841873983410176: Det går rykten megafonen arrangerat upploppet med bla rädda barnen https://t.co/KRXSQsKt7c  #svpol #husby by @PKcensuren
+Imported Tweet 336841849270579200: Ca 90% av väljarna är en av huvudorsakerna til upploppen i #husby och kom inte och gnäll efteråt som man bäddar får man ligga #svpol #sd2014 by @Nickemax
+Imported Tweet 336841782576963585: Har lyssnat på Reinfeldts presskonferens om Husbysituationen. Han är klok och systematisk i uttalandet. Inte populistisk stil. Bra! #svpol by @MaryXJ
+Imported Tweet 336841757499224064: Nej, men lite hårdare tag mot de här otacksamma förortskidsen löser nog problemen... #reinfeldt #husby #svpol by @jonten359
+Imported Tweet 336841671104921604: RT @ToreK: Våld är varken patriarkatets, invandrarnas, politikernas eller polisens fel, utan den enskilda förövarens. #svpol #Husby by @anton_aeas
+Imported Tweet 336841575915196417: RT @ToreK: Våld är varken patriarkatets, invandrarnas, politikernas eller polisens fel, utan den enskilda förövarens. #svpol #Husby by @jonssonvictor
+Imported Tweet 336841554180308992: Reportage i #Aktuellt Blekinge-hårt drabbat av ungdomsarbetslöshet. Vad göra ? I studion Oscar Ernerot,LO, och Malin Sahlén,Timbro. #svpol by @ASundkvist
+Imported Tweet 336841512581201920: RT @rogsahl: De har fått skola, vård o omsorg. En chans att börja om Då tar dom till våld och hot för att få mera. #husby #svpol  http://t.co/UktGaPsCfo by @FinkenFuckers
+Imported Tweet 336841472731140096: Våga satsa offensivt på bostadsbyggande!
+http://t.co/qAwE7ykPa8
+#vpol #svpol #socpol by @rattvisare
+Imported Tweet 336841437201182720: RT @StefanBergmark: "Ett liv i Husby är inte lika mycket värt som ett liv på Djursholm", skriver @Foujan http://t.co/ing2LOfnx9 #svpol #husby by @IngenillegalGBG
+Imported Tweet 336841431018766337: Det rätta hade varit att ha pressträff i #Husby, men dit åker man tydligen bara då det är bra saker att rapportera? #Reinfeldt #svpol by @F1John
+Imported Tweet 336841427277467648: Sveriges utrikes­minister Carl Bildt trivs i sin nya päls. http://t.co/9HXoAlcOJ6 #svpol by @FokusRedaktion
+Imported Tweet 336841266635612161: RT @redundans: En artikel som tåls att spridas igen: Det liberala våldet http://t.co/DESmHppVQk #Reinfeldt #husby #svpol #våld by @foliekatt
+Imported Tweet 336841078005190657: @MississL Reinfeldt är så jääävla dyster. Mer död än levande #svpol by @Klartexten
+Imported Tweet 336841044350087168: RT @rogsahl: De har fått skola, vård o omsorg. En chans att börja om Då tar dom till våld och hot för att få mera. #husby #svpol  http://t.co/UktGaPsCfo by @Ann_Marie1
+Imported Tweet 336840999097741312: Reinfeldt visar tydligt ledarskap. Vi viker oss inte för våldet, ge makten tillbaka till de boende från våldsmakarna. #reinfeldt #svpol by @KarapetArin
+Imported Tweet 336840997348712450: RT @BennyBetongg: Äntligen någon som säger "Det är inte svar på frågan" när en politiker inte svara på den egentliga frågan #svpol #husby by @stjaerngosse
+Imported Tweet 336840941048565760: Går en invandrare, polisen tittar: Vad tror ni polisen tänker? "Apa, illegal människa, papperslös människa"? #svpol #husby by @witnezOfmankind
+Imported Tweet 336840936246087684: RT @FollowJosefin: Reinfeldt: Sverige som demokrati tror på lagstiftning. Det gäller överallt. Även i Husby. #svpol #aftonbladet by @Dream_ON01
+Imported Tweet 336840935432409089: Gud vad jobbkåt du är statministern #svpol #husby by @MattiasSport
+Imported Tweet 336840932525744133: RT @rogsahl: Jag väntar fortfarande på alla klipp där poliser påstås skrika nazistramsor. #husby #svpol by @Kulturz
+Imported Tweet 336840930336313344: De har fått skola, vård o omsorg. En chans att börja om Då tar dom till våld och hot för att få mera. #husby #svpol  http://t.co/UktGaPsCfo by @rogsahl
+Imported Tweet 336840919523405824: RT @Nickemax: Statsministern och ca 90% av väljarna en av orsakerna till upploppen i #husby @nya_moderaterna  #massinvandring #svpol  #sverigedemokraterna by @CommenSenceNow
+Imported Tweet 336840891841003521: RT @FollowJosefin: Reinfeldt: Vi viker inte för våldet. Det är inte ett uttryck för yttrandefrihet. #svpol #aftonbladet #husby by @Dream_ON01
+Imported Tweet 336840840448208898: @frokensverige @MBulaale Han nämnde faktiskt det kort o sa att ryktena skulle undersökas men kan även vara ett sätt att elda på våld #svpol by @enlitenparla
+Imported Tweet 336840833556955136: RT @Mejern: #Energiutmaningens betydelse måste tas på största allvar för oss alla....#EU #koldioxid #Kol #Förnybart  #svpol http://t.co/kGMzOHgK9n by @Vindkraft
+Imported Tweet 336840813889851392: RT @rogsahl: Jag väntar fortfarande på alla klipp där poliser påstås skrika nazistramsor. #husby #svpol by @miafjalla
+Imported Tweet 336840802506510336: RT @redundans: En artikel som tåls att spridas igen: Det liberala våldet http://t.co/DESmHppVQk #Reinfeldt #husby #svpol #våld by @IWILLBEARMED
+Imported Tweet 336840791022518272: Gården är stängd för länge sen, snuten jagar ungdomsgäng, natten är hård för betongens kungar. #Husby #nationalteatern #svpol by @jonten359
+Imported Tweet 336840790175277056: @rogsahl @anderslindberg @oisincantwell Hahaha! Otroligt! Jag fick en avpixlat slängd genom vindrutan så att bilen tog eld. #svpol by @perraponken
+Imported Tweet 336840716544274434: Reinfeldt: "Vi viker oss aldrig för våldet" (..men inte f-n åker jag dit för att prata med folk heller, det kan ju vara farligt!) #svpol by @F1John
+Imported Tweet 336840694452846593: RT @JohanGJohansson: Fredrik Reinfeldts analys om #husby i sammanfattning:
+ 'Det går bra nu.'
+ #svpol by @_Gautt
+Imported Tweet 336840681358237697: Snälla @SVTforum kan ni lägga ljud så att vi även hör frågorna som ställs vid PKn med Reinfeldt mfl! #svpol #husby by @Frk_Medborgare
+Imported Tweet 336840627817938944: RT @Nickemax: Statsministern och ca 90% av väljarna en av orsakerna till upploppen i #husby @nya_moderaterna  #massinvandring #svpol  #sverigedemokraterna by @Klartexten
+Imported Tweet 336840572616712192: RT @71Sndag: F.R.. jag vill inte ha det såhär i mitt Sverige.  Undrar VEM som ställt till det såhär ? #svpol by @CommenSenceNow
+Imported Tweet 336840569563271172: Reinfeldt visar prov på hur man retoriskt undviker att svara på "lata" journalisters förenklade frågor. #husby #svpol by @ArntChristianF
+Imported Tweet 336840556464455681: Unga kvinnor kan också slåss #svpol #pk #fredrikreinfeldt by @MattiasSport
+Imported Tweet 336840524248006656: Statsministern fick frågan om klassklyftor &amp; svarade om invandring. Tråkig retorik som förstärker utanförskap. De är inte invandrare. #svpol by @ihsanke
+Imported Tweet 336840511853846528: Vad fan sade Reinfeldt egentligen? Hur fan kan vi ha en sån idiot till statsminister? #svpol by @Klartexten
+Imported Tweet 336840479029211136: Äntligen någon som säger "Det är inte svar på frågan" när en politiker inte svara på den egentliga frågan #svpol #husby by @BennyBetongg
+Imported Tweet 336840388876849153: En artikel som tåls att spridas igen: Det liberala våldet http://t.co/DESmHppVQk #Reinfeldt #husby #svpol #våld by @redundans
+Imported Tweet 336840359718051840: Jag väntar fortfarande på alla klipp där poliser påstås skrika nazistramsor. #husby #svpol by @rogsahl
+Imported Tweet 336840354278031361: Hur många trodde på fullt allvar att polisen ogillade REVA? Dom som kallar folk "apor", det är så dom ser på utlänningar. #svpol #husby by @witnezOfmankind
+Imported Tweet 336840283968925696: Statsministern och ca 90% av väljarna en av orsakerna till upploppen i #husby @nya_moderaterna  #massinvandring #svpol  #sverigedemokraterna by @Nickemax
+Imported Tweet 336840262087237632: Och så bilden med "Modernisering" i bakgrunden samtidigt som ombuden viftar vilt med gula papperslappar.
+http://t.co/HwkPZV5xzR
+#mp #svpol by @patrikstromer
+Imported Tweet 336840229984026625: att flyga över ..ett .kärnkraftverk. http://t.co/PVKX2TYUC4 #svpol, #ringhals by @tpercan
+Imported Tweet 336840170290675712: @EdwardRiedl @Kulturz Ord ord ord. Väger lätt om man jämför med en tvåkilos sten, tyvärr. #svpol by @perraponken
+Imported Tweet 336840090779262976: Det här är ju bara så otroligt kul!
+"Röster räknas noga så att det blir rätt beslut."
+http://t.co/HwkPZV5xzR
+#mp #svpol by @patrikstromer
+Imported Tweet 336840086534623232: RT @_Gautt: Polisarb. i upplösn enl AB pga att polis i tjänst dödar en person per år. Fel -ungefär som Tyskl, 1/20 av USA. #svpol http://t.co/9RTTdN7GgY by @Provokatoren
+Imported Tweet 336840083644751872: F.R.. jag vill inte ha det såhär i mitt Sverige.  Undrar VEM som ställt till det såhär ? #svpol by @71Sndag
+Imported Tweet 336840063075897345: Statsminister Reinfeldt säger att vi får 1 mer spännande samhälle. Hmm, kanske inte det mest lämpliga ordvalet i sammanhanget. #Husby #svpol by @MagnusiSolna
+Imported Tweet 336840006440198144: RT @frokensverige: .@MBulaale Lämna gärna en adekvat källa på att polisen uttalat sig rasistiskt och nedsättande. #svpol #Husby #terror #migpol #polisen by @_Gautt
+Imported Tweet 336839913985150976: På väg till Lund för att träffa Moderata Ungdomsförbundet. #svpol by @kentpersson
+Imported Tweet 336839895907704832: RT @ToreK: Våld är varken patriarkatets, invandrarnas, politikernas eller polisens fel, utan den enskilda förövarens. #svpol #Husby by @UDanster
+Imported Tweet 336839860788817921: Reinfeldt: De största brottsoffren finns i brottsverkarnas närhet #svpol #husby by @NiklasGillstrom
+Imported Tweet 336839844909162498: Tycker Reinfeldt borde få ta en liten tur med en radiobil ut till #husby ikväll
+#svpol by @HessaHeiki
+Imported Tweet 336839837292322816: .@MBulaale Lämna gärna en adekvat källa på att polisen uttalat sig rasistiskt och nedsättande. #svpol #Husby #terror #migpol #polisen by @frokensverige
+Imported Tweet 336839830413656066: Polisarb. i upplösn enl AB pga att polis i tjänst dödar en person per år. Fel -ungefär som Tyskl, 1/20 av USA. #svpol http://t.co/9RTTdN7GgY by @_Gautt
+Imported Tweet 336839828865941504: RT @Mejern: #Energiutmaningens betydelse måste tas på största allvar för oss alla....#EU #koldioxid #Kol #Förnybart  #svpol http://t.co/kGMzOHgK9n by @100_fornybart
+Imported Tweet 336839786994225152: @socialdemokrat kommer ut som rasister och rasbiologer #svpol #husby http://t.co/gpqn8hfuCc by @rogsahl
+Imported Tweet 336839716211134464: Vaken Reinfeldt höll PK, delvis bra: "Huliganism!", helgarderingen att skylla på skolan var mindre bra. #svpol by @TommyFunebo
+Imported Tweet 336839708581715968: #svpol #val Ett demokratiskt val ska bestå av flera politiska partier i konkurrens om regeringsmakten. Lagstifta bort allianser! by @hktwituser
+Imported Tweet 336839639392477184: Att Reinfeldt ger plats för utbildnings- &amp; jobbpolitik på presskonferensen om #Husby visar på förmåga till långsiktighet och ansvar. #svpol by @OliverRosengren
+Imported Tweet 336839630865461248: LO tar fram ett program för full sysselsättning - ett av de största projekten i LO:s moderna historia: http://t.co/ffM4I540EE #facket #svpol by @komarb
+Imported Tweet 336839574628204545: RT @retohenrik: Reinfeldt svarar på frågor om oroligheterna i #Husby. Vikten av att lugn och ro får infinna sig. #svpol http://t.co/T7RTdH6PFw by @NiklasGillstrom
+Imported Tweet 336839570194829312: Pengarna som hundratusentals missar - Privata Affärer - Privata Affärer http://t.co/KxuTvFbTGw #Sverige #svpol by @GbgNu
+Imported Tweet 336839568949145601: Motivet: Det var bara en kul grej - Göteborgs-Posten http://t.co/NdnlFID0Dj #Sverige #svpol by @GbgNu
+Imported Tweet 336839558597591040: @Fryshuset #Husby #Svpol http://t.co/6Hw88g730C by @LottaBackman
+Imported Tweet 336839448585183233: RT @interasistmen: SD visar sina rätta åsikter i samband med Husby-upploppen #husby #SD #svpol http://t.co/riPPfTFHW8 by @Smultronblomma
+Imported Tweet 336839373083521026: RT @NiklasGillstrom: Reinfeldt är mycket balanserad, lugn och pratar både hur vi på kort och lång sikt ska fixa situationen i #husby #svpol by @OliverRosengren
+Imported Tweet 336839366125174784: RT @markus_uvell: Mycket klokt av Hanne Kjöller om den besynnerliga debatten om papperslösa. http://t.co/iwPNVaFNV6 #svpol by @Presits
+Imported Tweet 336839328519049216: Reinfeldt är mycket balanserad, lugn och pratar både hur vi på kort och lång sikt ska fixa situationen i #husby #svpol by @NiklasGillstrom
+Imported Tweet 336839300895354881: RT @Mejern: #Energiutmaningens betydelse måste tas på största allvar för oss alla....#EU #koldioxid #Kol #Förnybart  #svpol http://t.co/kGMzOHgK9n by @ankijohansson
+Imported Tweet 336839298563313664: Kan man spela på oddset ny kategori : Polisen skyldig eller oskyldig? #svpol #husby by @witnezOfmankind
+Imported Tweet 336839291080691713: The last 20 Swedish crimestories I have seen have rightwing whitepeople as the bad guy. What is wrong in #Husby? Dont they have TV? #svpol by @CommenSenceNow
+Imported Tweet 336839187737227264: Statsministern pladdrar som en 32 a och inget om den verkliga orsaken till upploppen  i #husby #massinvandring #islam #sweden #svpol by @Nickemax
+Imported Tweet 336839181244448768: RT @Frihetligt: Missa inte @JoakimHolmertz om #Husby och #Megafonen: http://t.co/viV5fEmORh #svpol by @JoakimHolmertz
+Imported Tweet 336839156519010304: RT @JohanGJohansson: Fredrik Reinfeldts analys om #husby i sammanfattning:
+ 'Det går bra nu.'
+ #svpol by @RoedaLisch
+Imported Tweet 336839121521745920: RT @OliverRosengren: "Vi kan inte låta våldet styra" - Fredrik Reinfeldt om #Husby i #svt #svpol by @RobinGMJ
+Imported Tweet 336839119248453632: Det är makalöst att moderaternas "fina" rykte fått ungdomar helt inkapabla till att se lögnerna inte ens ledaren klarar dölja. #svpol by @frkgidlund
+Imported Tweet 336839110432014339: Vissa föds i Sverige tack vare vår "generösa" invandringspolitik. Vi övriga hade bara vanlig bonntur. #svpol @paulinaneuding #livetslotteri by @perbj
+71sndag FOLLOWS ExponeratInfo
+71sndag FOLLOWS perraponken
+71sndag FOLLOWS Provokatoren
+71sndag FOLLOWS Nickemax
+71sndag FOLLOWS PKcensuren
+71sndag FOLLOWS _Gautt
+71sndag FOLLOWS kentekeroth
+71sndag FOLLOWS frokensverige
+ASundkvist FOLLOWS anderslindberg
+ASundkvist FOLLOWS paulinaneuding
+ASundkvist FOLLOWS oisincantwell
+ASundkvist FOLLOWS socialdemokrat
+ASundkvist FOLLOWS svtforum
+ASundkvist FOLLOWS FokusRedaktion
+anderslindberg FOLLOWS ASundkvist
+anderslindberg FOLLOWS interasistmen
+anderslindberg FOLLOWS oisincantwell
+anderslindberg FOLLOWS redundans
+anderslindberg FOLLOWS FokusRedaktion
+anderslindberg FOLLOWS kentpersson
+anderslindberg FOLLOWS paulinaneuding
+anderslindberg FOLLOWS MaryXJ
+anderslindberg FOLLOWS socialdemokrat
+niklasgillstrom FOLLOWS retohenrik
+niklasgillstrom FOLLOWS OliverRosengren
+niklasgillstrom FOLLOWS oisincantwell
+niklasgillstrom FOLLOWS patrikstromer
+niklasgillstrom FOLLOWS svtforum
+niklasgillstrom FOLLOWS komarb
+niklasgillstrom FOLLOWS anderslindberg
+niklasgillstrom FOLLOWS FokusRedaktion
+niklasgillstrom FOLLOWS kentekeroth
+niklasgillstrom FOLLOWS paulinaneuding
+niklasgillstrom FOLLOWS kentpersson
+niklasgillstrom FOLLOWS socialdemokrat
+joakimholmertz FOLLOWS kentekeroth
+joakimholmertz FOLLOWS Presits
+joakimholmertz FOLLOWS paulinaneuding
+Kulturz FOLLOWS GbgNu
+Kulturz FOLLOWS Dream_ON01
+Kulturz FOLLOWS KarapetArin
+Kulturz FOLLOWS rogsahl
+Kulturz FOLLOWS Klartexten
+Kulturz FOLLOWS Provokatoren
+Kulturz FOLLOWS Mittswe
+Kulturz FOLLOWS paulinaneuding
+Kulturz FOLLOWS frokensverige
+Kulturz FOLLOWS kentekeroth
+Presits FOLLOWS kentekeroth
+Presits FOLLOWS paulinaneuding
+Provokatoren FOLLOWS ExponeratInfo
+Provokatoren FOLLOWS 71Sndag
+Provokatoren FOLLOWS FinkenFuckers
+Provokatoren FOLLOWS PolitikTuben
+Provokatoren FOLLOWS rogsahl
+Provokatoren FOLLOWS PKcensuren
+Provokatoren FOLLOWS perraponken
+Provokatoren FOLLOWS frokensverige
+Provokatoren FOLLOWS MagnusiSolna
+Provokatoren FOLLOWS Klartexten
+Provokatoren FOLLOWS Ann_Marie1
+Provokatoren FOLLOWS TomasErik75
+Provokatoren FOLLOWS Mittswe
+Provokatoren FOLLOWS Nickemax
+Provokatoren FOLLOWS _Gautt
+Provokatoren FOLLOWS Kulturz
+Provokatoren FOLLOWS kentekeroth
+miafjalla FOLLOWS _Gautt
+miafjalla FOLLOWS Provokatoren
+miafjalla FOLLOWS CommenSenceNow
+miafjalla FOLLOWS GbgNu
+miafjalla FOLLOWS PKcensuren
+miafjalla FOLLOWS Kulturz
+miafjalla FOLLOWS socialdemokrat
+miafjalla FOLLOWS kentekeroth
+miafjalla FOLLOWS perraponken
+miafjalla FOLLOWS oisincantwell
+miafjalla FOLLOWS ExponeratInfo
+miafjalla FOLLOWS anderslindberg
+miafjalla FOLLOWS TommyFunebo
+miafjalla FOLLOWS Nickemax
+miafjalla FOLLOWS rogsahl
+miafjalla FOLLOWS frokensverige
+miafjalla FOLLOWS TomasErik75
+miafjalla FOLLOWS Mittswe
+rattvisare FOLLOWS svtforum
+johangjohansson FOLLOWS oisincantwell
+johangjohansson FOLLOWS anderslindberg
+johangjohansson FOLLOWS FokusRedaktion
+johangjohansson FOLLOWS interasistmen
+johangjohansson FOLLOWS kentpersson
+Ann_Marie1 FOLLOWS enlitenparla
+Ann_Marie1 FOLLOWS perraponken
+Ann_Marie1 FOLLOWS ExponeratInfo
+Ann_Marie1 FOLLOWS rogsahl
+Ann_Marie1 FOLLOWS Provokatoren
+Ann_Marie1 FOLLOWS CommenSenceNow
+Ann_Marie1 FOLLOWS TommyFunebo
+Ann_Marie1 FOLLOWS Mittswe
+Ann_Marie1 FOLLOWS Klartexten
+Ann_Marie1 FOLLOWS _Gautt
+Ann_Marie1 FOLLOWS frokensverige
+IWILLBEARMED FOLLOWS interasistmen
+IWILLBEARMED FOLLOWS redundans
+OliverRosengren FOLLOWS anderslindberg
+OliverRosengren FOLLOWS RobinGMJ
+OliverRosengren FOLLOWS NiklasGillstrom
+OliverRosengren FOLLOWS socialdemokrat
+OliverRosengren FOLLOWS kentpersson
+jupptuck FOLLOWS Kulturz
+jupptuck FOLLOWS PKcensuren
+jupptuck FOLLOWS rogsahl
+jupptuck FOLLOWS kentekeroth
+frkgidlund FOLLOWS MattiasSport
+frkgidlund FOLLOWS retohenrik
+frkgidlund FOLLOWS NiklasGillstrom
+frkgidlund FOLLOWS jonten359
+frkgidlund FOLLOWS Klartexten
+frkgidlund FOLLOWS Mittswe
+frkgidlund FOLLOWS Presits
+frkgidlund FOLLOWS komarb
+frkgidlund FOLLOWS Kulturz
+frkgidlund FOLLOWS OliverRosengren
+frkgidlund FOLLOWS TommyFunebo
+frkgidlund FOLLOWS _Gautt
+frkgidlund FOLLOWS ExponeratInfo
+frkgidlund FOLLOWS RoedaLisch
+frkgidlund FOLLOWS kentekeroth
+frkgidlund FOLLOWS socialdemokrat
+fryshuset FOLLOWS GbgNu
+fryshuset FOLLOWS FokusRedaktion
+fryshuset FOLLOWS paulinaneuding
+fryshuset FOLLOWS LottaBackman
+fryshuset FOLLOWS socialdemokrat
+16:04:18.254 [main] WARN  o.s.web.client.RestTemplate - GET request for "https://api.twitter.com/1/users/lookup.json?user_id=60350403%2C116185001%2C112444426%2C114451404%2C93685148%2C103230473%2C30036458%2C114863019%2C21031378%2C89140381%2C70370141%2C55666471%2C104960470%2C21555299%2C38210026%2C29188279%2C45198965%2C25551330%2C43090173%2C89034138%2C107073714%2C117146345%2C113583741%2C98011977%2C117680694%2C118016485%2C118078941%2C105924779%2C50747978%2C109374244%2C95225322%2C109378742%2C95001925%2C109374996%2C109235447%2C24878097%2C109498142%2C33864302%2C25484068%2C109534562%2C106419182%2C109572797%2C14048495%2C20588914%2C41087680%2C109656505%2C109824235%2C102439366%2C109759699%2C22672228%2C89566392%2C37919827%2C107759125%2C106371061%2C13859412%2C109662943%2C100778019%2C95965723%2C109205464%2C56086014%2C110213899%2C110213562%2C110215866%2C92718346%2C110349737%2C110405902%2C62937972%2C97418646%2C86393196%2C38930019%2C69564664%2C26573807%2C110699035%2C110767123%2C68817203%2C110772652%2C110787904%2C66646973%2C110805323%2C29508967%2C110819248%2C110961510%2C20049206%2C111044912%2C111399647%2C111546483%2C94574215%2C111332860%2C45452707%2C111596506%2C111593575%2C111571175%2C111634334%2C101689441%2C111645018%2C108030673%2C110453851%2C96330030%2C110446068%2C109884644" resulted in 503 (Service Unavailable); invoking error handler
+Twitter is overloaded with requests. Try again later.
+frihetligt FOLLOWS paulinaneuding
+frihetligt FOLLOWS JoakimHolmertz
+svtforum FOLLOWS paulinaneuding
+svtforum FOLLOWS kentpersson
+svtforum FOLLOWS anderslindberg
+svtforum FOLLOWS socialdemokrat
+Frk_Medborgare FOLLOWS perbj
+Frk_Medborgare FOLLOWS redundans
+Frk_Medborgare FOLLOWS kentpersson
+Frk_Medborgare FOLLOWS anderslindberg
+Frk_Medborgare FOLLOWS svtforum
+Frk_Medborgare FOLLOWS paulinaneuding
+Frk_Medborgare FOLLOWS socialdemokrat
+Frk_Medborgare FOLLOWS komarb
+Frk_Medborgare FOLLOWS FokusRedaktion
+16:05:27.157 [main] WARN  o.s.web.client.RestTemplate - GET request for "https://api.twitter.com/1/users/lookup.json?user_id=510861390%2C857717774%2C19448284%2C143379559%2C555959931%2C437564784%2C851007650%2C492248749%2C183553683%2C422775969%2C65478386%2C614090749%2C37882179%2C73014151%2C121881462%2C491478315%2C410242756%2C499915839%2C578809553%2C485106719%2C80803819%2C318877787%2C19853634%2C83811273%2C267898439%2C457360689%2C798882390%2C141893641%2C299714182%2C118401189%2C277617233%2C516918511%2C180392912%2C53732896%2C108318552%2C246320118%2C778919004%2C176438886%2C239797876%2C614064002%2C18716273%2C182520290%2C14377605%2C769528124%2C102050673%2C26458282%2C278675529%2C319147226%2C579826332%2C400723605%2C303159982%2C736991576%2C130440459%2C424494049%2C106044807%2C325435955%2C36302997%2C18916432%2C18833777%2C29704198%2C305596564%2C221044127%2C596658188%2C556315430%2C440818703%2C222808723%2C35821632%2C478050557%2C123787684%2C409806585%2C478083588%2C513342415%2C201870781%2C18803864%2C49292922%2C321887918%2C285082743%2C15029720%2C18765581%2C255003655%2C274655061%2C370018571%2C30981659%2C83576970%2C248597949%2C620295819%2C19279807%2C255207174%2C218114066%2C236763273%2C24188676%2C20371452%2C187846148%2C484856199%2C63099393%2C122025282%2C67318002%2C19663706%2C22117644%2C191053445" resulted in 400 (Bad Request); invoking error handler
+Error consuming Twitter REST API
+16:05:38.044 [main] WARN  o.s.web.client.RestTemplate - GET request for "https://api.twitter.com/1/users/lookup.json?user_id=983479560%2C771089672%2C25125441%2C94823191%2C1089722347%2C420465254%2C203500414%2C582091659%2C364835028%2C477822545%2C38692690%2C276680747%2C732486799%2C137369940%2C895357021%2C16418210%2C128637475%2C22248390%2C18718104%2C303241834%2C800828755%2C14314606%2C200648624%2C19562939%2C749518682%2C713945246%2C237295299%2C78077829%2C98006455%2C556047486%2C118833709%2C391891226%2C19252816%2C42718949%2C198810740%2C573541446%2C406728196%2C19225602%2C301378653%2C532465866%2C95017459%2C176042782%2C560866658%2C561855812%2C277133204%2C552706775%2C72520100%2C280885197%2C182036101%2C26272211%2C389706271%2C125610547%2C546882801%2C546329194%2C273898423%2C17199745%2C19022934%2C534882759%2C57622043%2C372142346%2C48157510%2C429203899%2C205366284%2C94801781%2C239131784%2C123856487%2C469158222%2C14745143%2C397154449%2C68952877%2C110658184%2C267016126%2C25169828%2C68853594%2C154857866%2C113087150%2C93233504%2C332683543%2C19457733%2C8032822%2C61481011%2C119418270%2C89354383%2C122167852%2C18771830%2C29169087%2C3901971%2C36956139%2C245175977%2C38012514%2C15500328%2C15520099%2C9631712%2C39210858%2C114857563" resulted in 400 (Bad Request); invoking error handler
+Error consuming Twitter REST API
+16:05:48.841 [main] WARN  o.s.web.client.RestTemplate - GET request for "https://api.twitter.com/1/users/lookup.json?user_id=542170497%2C111692611%2C20674376%2C133200254%2C725896819%2C19823951%2C161673168%2C194129821%2C34740166%2C26489325%2C90226829%2C400001248%2C25660377%2C39482533%2C19017675%2C21764525%2C154116697%2C34743468%2C22039926" resulted in 400 (Bad Request); invoking error handler
+Error consuming Twitter REST API

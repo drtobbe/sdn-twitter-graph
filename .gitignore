@@ -1,4 +1,5 @@
 twitter.db
+twitter-emb.db
 target
 *.iml
 *.ipr

@@ -19,5 +19,5 @@
     <neo4j:repositories base-package="org.neo4j.twitter_graph.repositories"/>
     <tx:annotation-driven mode="proxy"/>
     
-    <neo4j:config storeDirectory="twitter.db"/>
+    <neo4j:config storeDirectory="twitter-emb.db"/>
 </beans>
